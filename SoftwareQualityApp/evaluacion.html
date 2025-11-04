@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calidad del Software - Evaluación</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body><main>
+<header><h1>Evaluación de Aplicativos</h1></header>
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="calidad.html">Calidad</a>
+  <a href="codigo.html">Código</a>
+  <a href="programacion.html">Programación</a>
+  <a href="normas.html">Normas</a>
+  <a href="modelos.html">Modelos</a>
+  <a href="estandares.html">Estándares</a>
+  <a href="evaluacion.html">Evaluación</a>
+  <a href="modelo.html">Modelo</a>
+  <a href="conclusiones.html">Conclusiones</a>
+</nav>
+<section>
+  <p>Complete las valoraciones (0 a 5) en cada criterio. La calificación final será una puntuación cuantitativa (0 - 5).</p>
+  <form id="evalForm">
+    <fieldset><legend>Estándares de Calidad</legend>
+      <label>Funcionalidad: <input type="number" min="0" max="5" step="0.1" name="funcionalidad" value="3"></label>
+      <label>Fiabilidad: <input type="number" min="0" max="5" step="0.1" name="fiabilidad" value="3"></label>
+      <label>Usabilidad: <input type="number" min="0" max="5" step="0.1" name="usabilidad" value="3"></label>
+      <label>Eficiencia: <input type="number" min="0" max="5" step="0.1" name="eficiencia" value="3"></label>
+    </fieldset>
+
+    <fieldset><legend>Código</legend>
+      <label>Legibilidad: <input type="number" min="0" max="5" step="0.1" name="legibilidad" value="3"></label>
+      <label>Documentación: <input type="number" min="0" max="5" step="0.1" name="documentacion" value="3"></label>
+      <label>Pruebas Unitarias: <input type="number" min="0" max="5" step="0.1" name="unitarias" value="3"></label>
+    </fieldset>
+
+    <fieldset><legend>Programación</legend>
+      <label>Modularidad: <input type="number" min="0" max="5" step="0.1" name="modularidad" value="3"></label>
+      <label>Manejo de Errores: <input type="number" min="0" max="5" step="0.1" name="errores" value="3"></label>
+      <label>Seguridad: <input type="number" min="0" max="5" step="0.1" name="seguridad" value="3"></label>
+    </fieldset>
+
+    <div class="actions">
+      <button type="button" id="calculateBtn">Calcular</button>
+      <button type="button" id="exportBtn">Exportar JSON</button>
+      <button type="reset">Restablecer</button>
+    </div>
+  </form>
+
+  <div id="resultArea"></div>
+</section>
+<footer>Proyecto educativo - Calidad del Software</footer>
+<script src="app.js"></script>
+</main></body></html>
